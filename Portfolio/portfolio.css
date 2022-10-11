@@ -1,19 +1,24 @@
-body{
+body {
     background-color: lightblue;
 }
-.mainHStack{
+
+.mainHStack {
     display: flex;
+    flex-direction: row;
     width: 100%;
 
 }
-#profilePic{
+
+#profilePic {
     width: 50%;
+    height: 50%;
     border: 5px solid black;
     margin: 10px;
     position: relative;
     top: 100px;
 }
-.heroExplanation{
+
+.paragraph {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,22 +28,42 @@ body{
     position: relative;
     top: 100px;
 }
-.border{
+
+.border {
     border: 2px solid black;
 }
-.navbar{
+
+.navbar {
     background-color: rgb(255, 120, 120);
     position: fixed;
     top: 0px;
-    left:0px;
-    right:0px;
+    left: 0px;
+    right: 0px;
     height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+
 a {
-    text-decoration: underline; 
-    color:black; 
+    text-decoration: underline;
+    color: black;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.whiteText {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
 }
