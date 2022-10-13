@@ -8,11 +8,6 @@ body {
     width: 100%;
 }
 
-@keyframes picChange2 {
-   from {display:inline;}
-   to {display:none;}
-  }
-
 #profilePic {
     width: 50%;
     height: 50%;
@@ -20,17 +15,6 @@ body {
     margin: 10px;
     position: relative;
     top: 100px;
-}
-
-#profilePic + #pic2 {
-    width:50%;
-    height: 50%;
-    border: 5px solid black;
-    margin: 10px;
-    position: relative;
-    top: 100px;
-    display: inline;
-    animation-name: picChange2;
 }
 
 .paragraph {
