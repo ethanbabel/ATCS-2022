@@ -13,21 +13,44 @@
 
     <!-- Your Personal CSS BELOW this Line -->
     <title>Ethan Babel Web Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="Styles/portfolio.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">EB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-around w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-me.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-me.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="mainHStack">
         <div class="paragraph">
-            <div class="border">
+            <div class="black-border">
                 <h1>Ethan Babel</h1>
                 <p>Menlo Water Polo | Stanford Water Polo Club</p>
             </div>
-            <a target="_self" href="about-me.html">About Me</a>
-            <a target="_self" href="experience.html">Experience</a>
-            <a target="_self" href="contact-me.html">Contact Me</a>
+            <a class="link" target="_self" href="about-me.html">About Me</a>
+            <a class="link" target="_self" href="experience.html">Experience</a>
+            <a class="link" target="_self" href="contact-me.html">Contact Me</a>
         </div>
-        <img src="R01_1195.jpeg" id="profilePic">
+        <img src="Images/R01_1195.jpeg" id="profilePic">
 
     </div>
 
