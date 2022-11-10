@@ -2,40 +2,127 @@
 <html>
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Your Personal CSS BELOW this Line -->
     <title>Ethan Babel Web Portfolio (About Me) </title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="Styles/portfolio.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <a target="_self" href="index.html">Home</a>
-        <a target="_self" href="about-me.html">About Me</a>
-        <a target="_self" href="experience.html">Experience</a>
-        <a target="_self" href="contact-me.html">Contact Me</a>
-    </div>
-    <div class="mainHStack">
-        <div class="paragraph">
-            <div class="border">
-                <h1>Ethan Babel</h1>
-                <p>About Me</p>
-            </div>
-            <p class="whiteText">
-                My path to Water Polo Started at just a year old, when my parents threw me in the water to teach me to
-                swim. After learning to swim for years and being on the swim team for more time, I finally tried Water
-                Polo during 6th grade. By 7th Grade, my small team that was associated with my swim club in my hometown
-                of San Francisco wasn't competitive enough for me. Starting in 7th grade, I switched clubs to play for
-                Stanford Water Polo club, one of the top clubs in the country. A few years later I enrolled at Menlo
-                High School, also near Stanford, and began to play for their high school team. Now in my Senior year, I
-                have improved a lot since I first started at Stanford WPC. This past year I was the first sub on the
-                Stanford 18u A team, a top 15 team in the country, as a 17 year old. I'm also a key starter for Menlo, a
-                top 20 high school team in the country, where I play 100% of all meaningful minutes. Outside of Stanford
-                and Menlo, I've also played for Olympic Development Program (ODP) regional zone teams, and with 5-time
-                Olympian Tony Azevedo's All Star Team in Croatia.
-
-            </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">EB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-around w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="about-me.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Me
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about-me.html">About Me</a>
+                        <a class="dropdown-item" href="https://www.instagram.com/menlo_wp/">Menlo Water Polo
+                            instagram</a>
+                        <a class="dropdown-item" href="https://www.stanfordwaterpoloclub.com/">Stanford WPC Website</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="experience.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Experience
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="experience.html">Experience</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/channel/UClS9iK4r0N7CXbhPDOyoYfw">Personal Highlights</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-me.html">Contact Me</a>
+                </li>
+            </ul>
         </div>
-        <img src="42B69CD4-6EAD-4F8D-93D7-FA78A2ECB8AB.JPG" id="profilePic">
+    </nav>
+    <div class="jumbotron">
+        <h1 class="title">About Me</h1>
     </div>
+    <div class="container">
+
+        <div class="main-hstack">
+            <div class="paragraph">
+                <div class="black-border">
+                    <h1>Ethan Babel</h1>
+                    <p>About Me</p>
+                </div>
+                <p class="whiteText">
+                    My path to Water Polo Started at just a year old, when my parents threw me in the water to teach me
+                    to
+                    swim. After learning to swim for years and being on the swim team for more time, I finally tried
+                    Water
+                    Polo during 6th grade. By 7th Grade, my small team that was associated with my swim club in my
+                    hometown
+                    of San Francisco wasn't competitive enough for me. Starting in 7th grade, I switched clubs to play
+                    for
+                    Stanford Water Polo club, one of the top clubs in the country. A few years later I enrolled at Menlo
+                    High School, also near Stanford, and began to play for their high school team. Now in my Senior
+                    year, I
+                    have improved a lot since I first started at Stanford WPC. This past year I was the first sub on the
+                    Stanford 18u A team, a top 15 team in the country, as a 17 year old. I'm also a key starter for
+                    Menlo, a
+                    top 20 high school team in the country, where I play 100% of all meaningful minutes. Outside of
+                    Stanford
+                    and Menlo, I've also played for Olympic Development Program (ODP) regional zone teams, and with
+                    5-time
+                    Olympian Tony Azevedo's All Star Team in Croatia.
+
+                </p>
+            </div>
+            <div class="profile-pic">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100"
+                                src="Images/about-me-images/42B69CD4-6EAD-4F8D-93D7-FA78A2ECB8AB.JPG" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="Images/about-me-images/31EB49CA-A2A9-430B-8843-25968D6AA44E.JPG"
+                                alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="Images/about-me-images/A495D848-B5D0-4EE5-90CC-04BAB91A9EDD.JPG" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Your Content ABOVE this Line -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

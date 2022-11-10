@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+}
+
+.main-hstack {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 50%;
+    height: 50%;
+    border: 5px solid black;
+    margin: 10px;
+    position: relative;
+    top: 100px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(83, 83, 255);
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.black-border {
+    border: 2px solid black;
+}
+
+.title{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.link{
+    text-decoration: underline;
+    color: black;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.whiteText {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.padding {
+    padding: 70px;
+}

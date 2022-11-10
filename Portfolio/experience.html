@@ -2,68 +2,157 @@
 <html>
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Your Personal CSS BELOW this Line -->
     <title>Ethan Babel Web Portfolio (Experience) </title>
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="Styles/portfolio.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <a target="_self" href="index.html">Home</a>
-        <a target="_self" href="about-me.html">About Me</a>
-        <a target="_self" href="experience.html">Experience</a>
-        <a target="_self" href="contact-me.html">Contact Me</a>
-    </div>
-    <h1 class="title">Experience</h1>
-    <div class="mainHStack">
-        <div class="paragraph">
-            <div class="border">
-                <h1>Ethan Babel</h1>
-                <p>Experience</p>
-            </div>
-            <div>
-                <p class="bold underline">PERSONAL STATISTICS: </p>
-                <p>Date of Birth: September 26, 2004 <br>Height: 5’11” <br>Weight: 180 lbs <br>Position: Attacker /
-                    Driver
-                    <br>100 Free: 0:53 <br>50 Free: 0:24
-                </p>
-            </div>
-            <div>
-                <p class="bold underline">AWARDS/HONORS: </p>
-                <p>USAWP Academic All-American (2019/20, 2020/21, 2021/22) <br>2021 ODP Boys Youth PAC White Team
-                    <br>2021 All WCAL Honorable Mention <br>2022 ODP Boys Youth PAC Blue Team
-                </p>
-            </div>
-            <div>
-                <p class="bold underline">WATER POLO EXPERIENCE: </p>
-                <p class="bold">Menlo School Water Polo</p>
-                <p>
-                    Current: Varsity Starting Attacker/Driver<br> 2021/22: Varsity Starter, 2nd in assists and steals
-                    (Team: 16-13, 3rd in WCAL, CCS Open Division SemiFinals, top-20 in Country) <br> 2020/21: Varsity
-                    Starter, 2nd in assists (Team:9-2, abbreviated Covid season) <br> 2019/20: JV Starter (Team: 20-9,
-                    WCAL Finalists, CCS Open Division SemiFinals, Top-20 in Country)
-                </p>
-                <p class="bold">Stanford Water Polo Club</p>
-                <p>
-                    2017-present: competed in all major tournaments (JO's, Kap7, Futures Superfinals, etc)
-                </p>
-                <p class="bold">6-8 Sports Collegiate Showcase For Tony Azevedo Water Polo:</p>
-                <p>
-                    Dallas, Texas, May 21-23, 2021 <br>Fresno, California, January 21-23, 2022 <br>Stamford,
-                    Connecticut, February 25-27, 2022 <br>Long Beach, California April 29 - May 1 2022
-                </p>
-                <p class="bold">6-8 Sports Tony Azevedo Croatia All-Star Team</p>
-                <p>
-                    Dubrovnik, Croatia, August 2-10, 2022
-                </p>
-                <p class="bold">USAWP ODP (Olympic Development Program)</p>
-                <p>
-                    2021 Boys Youth PAC White Team, May 30, 2021 <br>2022 Boys Youth PAC Blue Team, March 4-6, 2022
-                </p>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">EB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-around w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about-me.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Me
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about-me.html">About Me</a>
+                        <a class="dropdown-item" href="https://www.instagram.com/menlo_wp/">Menlo Water Polo
+                            instagram</a>
+                        <a class="dropdown-item" href="https://www.stanfordwaterpoloclub.com/">Stanford WPC Website</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="experience.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Experience
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="experience.html">Experience</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/channel/UClS9iK4r0N7CXbhPDOyoYfw">Personal Highlights</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-me.html">Contact Me</a>
+                </li>
+            </ul>
         </div>
-        <img src="F496CFA2-21D4-4985-9EEF-2B07A745510A.JPG" id="profilePic">
+    </nav>
+    <div class="jumbotron">
+        <h1 class="title">Experience</h1>
     </div>
-    
+    <div class="container">
+        <div class="main-hstack">
+            <div class="paragraph">
+                <div class="black-border">
+                    <h1>Ethan Babel</h1>
+                    <p>Experience</p>
+                </div>
+                <div>
+                    <p class="bold underline">PERSONAL STATISTICS: </p>
+                    <p>Date of Birth: September 26, 2004 <br>Height: 5’11” <br>Weight: 180 lbs <br>Position: Attacker /
+                        Driver
+                        <br>100 Free: 0:53 <br>50 Free: 0:24
+                    </p>
+                </div>
+                <div>
+                    <p class="bold underline">AWARDS/HONORS: </p>
+                    <p>USAWP Academic All-American (2019/20, 2020/21, 2021/22) <br>2021 ODP Boys Youth PAC White Team
+                        <br>2021 All WCAL Honorable Mention <br>2022 ODP Boys Youth PAC Blue Team
+                    </p>
+                </div>
+                <div>
+                    <p class="bold underline">WATER POLO EXPERIENCE: </p>
+                    <p class="bold">Menlo School Water Polo</p>
+                    <p>
+                        Current: Varsity Starting Attacker/Driver<br> 2021/22: Varsity Starter, 2nd in assists and
+                        steals
+                        (Team: 16-13, 3rd in WCAL, CCS Open Division SemiFinals, top-20 in Country) <br> 2020/21:
+                        Varsity
+                        Starter, 2nd in assists (Team:9-2, abbreviated Covid season) <br> 2019/20: JV Starter (Team:
+                        20-9,
+                        WCAL Finalists, CCS Open Division SemiFinals, Top-20 in Country)
+                    </p>
+                    <p class="bold">Stanford Water Polo Club</p>
+                    <p>
+                        2017-present: competed in all major tournaments (JO's, Kap7, Futures Superfinals, etc)
+                    </p>
+                    <p class="bold">6-8 Sports Collegiate Showcase For Tony Azevedo Water Polo:</p>
+                    <p>
+                        Dallas, Texas, May 21-23, 2021 <br>Fresno, California, January 21-23, 2022 <br>Stamford,
+                        Connecticut, February 25-27, 2022 <br>Long Beach, California April 29 - May 1 2022
+                    </p>
+                    <p class="bold">6-8 Sports Tony Azevedo Croatia All-Star Team</p>
+                    <p>
+                        Dubrovnik, Croatia, August 2-10, 2022
+                    </p>
+                    <p class="bold">USAWP ODP (Olympic Development Program)</p>
+                    <p>
+                        2021 Boys Youth PAC White Team, May 30, 2021 <br>2022 Boys Youth PAC Blue Team, March 4-6, 2022
+                    </p>
+                </div>
+            </div>
+            <img src="Images/experience-images/F496CFA2-21D4-4985-9EEF-2B07A745510A.JPG" class="profile-pic">
+        </div>
+    </div>
+    <div class="container my-5 padding">
+
+        <section class="">
+            <!-- Footer -->
+            <footer class="text-center text-white" style="background-color: #0a4275;">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: CTA -->
+                    <section class="">
+                        <p class="d-flex justify-content-center align-items-center">
+                            <span class="me-3">See my Resume -> </span>
+                            <a
+                                href="https://docs.google.com/document/d/1qaAXjZcMCDtXQcF9wcrjQGEcko7cwmukySyMt82nBrI/edit">
+                                <button type="button" class="btn btn-outline-light btn-rounded"
+                                    href="https://www.youtube.com/">
+                                    Click Here!
+                                </button>
+                            </a>
+                        </p>
+                    </section>
+                    <!-- Section: CTA -->
+                </div>
+                <!-- Grid container -->
+            </footer>
+            <!-- Footer -->
+        </section>
+
+    </div>
+    <!-- End of .container -->
+
+    <!-- Your Content ABOVE this Line -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
