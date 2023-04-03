@@ -15,6 +15,7 @@ class User(Base):
     username = Column("username", TEXT, primary_key=True)
     password = Column("password", TEXT, nullable=False)
 
+    tweets = relationship("Tweet", back_populates="user")
     following = relationship("User", 
                              secondary="followers",
                              primaryjoin="User.username==Follower.follower_id",
@@ -25,6 +26,9 @@ class User(Base):
                              primaryjoin="User.username==Follower.following_id",
                              secondaryjoin="User.username==Follower.follower_id",
                              overlaps="following")
+    
+    def __repr__(self):
+        return "@" + str(self.username)
 
 
 class Follower(Base):
@@ -37,12 +41,35 @@ class Follower(Base):
 
 class Tweet(Base):
     # TODO: Complete the class
-    pass
+    __tablename__ = "tweets"
+
+    id = Column("id", INTEGER, primary_key=True)
+    content = Column("content", TEXT, nullable=False)
+    timestamp = Column("timestamp", TEXT, nullable=False)
+    username = Column("username", TEXT, ForeignKey("users.username"))
+
+    user = relationship("User", back_populates= "tweets")
+    tags = relationship("Tag", secondary="tweettags", back_populates="tweets")
+
+    def __repr__(self):
+       return("@" + str(self.username) + "\n" + str(self.content) + "\n" + str(self.tags) + "\n" + str(self.timestamp))
+
 
 class Tag(Base):
     # TODO: Complete the class
-    pass
+    __tablename__ = "tags"
+
+    id = Column("id", INTEGER, primary_key=True)
+    content = Column("content", TEXT, nullable=False)
+
+    tweets = relationship("Tweet", secondary="tweettags", back_populates="tags")
+
+    def __repr__(self):
+        return "#" + str(self.content)
 
 class TweetTag(Base):
     # TODO: Complete the class
-    pass
+    __tablename__ = "tweettags"
+
+    tweet_id = Column(INTEGER, ForeignKey('tweets.id'), primary_key=True)
+    tag_id = Column(INTEGER, ForeignKey('tags.id'), primary_key=True)
