@@ -1,0 +1,28 @@
+body {
+    background-color: #D1ACFF;
+    font-family: Inter, sans-serif;
+  }
+  .navbar {
+    background-color: #8000FF;
+    color: white;
+  }
+  
+  /* Style the active page */
+  .navbar .active {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .player-box {
+    background-color: #CCCCCC;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
