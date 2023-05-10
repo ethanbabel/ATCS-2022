@@ -49,6 +49,7 @@ with open("FinalProject_FantasyData/FantasyPros_Fantasy_Football_Statistics_RB.c
             position="RB", points=float(reader["FPTS/G"][row]), 
             rushing_yards=int(re.sub("[^\d\.]", "", reader["RuYDS"][row]))/int(reader["G"][row]), 
             rushing_tds=int(reader["RuTD"][row])/int(reader["G"][row]), 
+            receptions=int(reader["REC"][row])/int(reader["G"][row]),
             recieving_yards=int(reader["ReYDS"][row])/int(reader["G"][row]), 
             recieving_tds=int(reader["ReTD"][row])/int(reader["G"][row]), 
             fumbles=int(reader["FL"][row])/int(reader["G"][row]), 

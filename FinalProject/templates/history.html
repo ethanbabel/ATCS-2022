@@ -12,7 +12,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
-        <a class="navbar-brand" href="comparison.html">Fantasy Football Comparison</a>
+        <a class="navbar-brand" href="{{url_for('search')}}">Fantasy Football Comparison</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="comparison.html">Compare <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{url_for('search')}}">Compare <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="history.html">History</a>
+              <a class="nav-link" href="{{url_for('history')}}">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
             </li>
           </ul>
         </div>
@@ -31,9 +34,9 @@
     <!-- Page content -->
     <div class="container">
       <h1>Search History</h1>
-      <div class="player-box">Player 1 vs Player 2</div>
-      <div class="player-box">Player 1 vs Player 3</div>
-      <div class="player-box">Player 2 vs Player 3</div>
+      {% for c in history %}
+        <div class="player-box">{{ c[0] }} vs {{ c[1] }}</div>
+      {% endfor %}
     </div>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

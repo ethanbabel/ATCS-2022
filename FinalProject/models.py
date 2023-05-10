@@ -13,19 +13,19 @@ class Player(Base):
 
     # Columns
     id = Column("id", INTEGER, primary_key=True)
-    name = Column('name', TEXT)
-    position = Column('position', TEXT)
-    points = Column('points', FLOAT)
-    passing_yards = Column('passing_yards', FLOAT)
-    passing_tds = Column('passing_tds', FLOAT)
-    interceptions = Column('interceptions', FLOAT)
-    sacks = Column('sacks', FLOAT)
-    rushing_yards = Column('rushing_yards', FLOAT)
-    rushing_tds = Column('rushing_tds', FLOAT)
-    receptions = Column('receptions', FLOAT)
-    recieving_yards = Column('recieving_yards', FLOAT)
-    recieving_tds = Column('recieving_tds', FLOAT)
-    fumbles = Column('fumbles', FLOAT)
+    name = Column('name', TEXT, nullable=False)
+    position = Column('position', TEXT, nullable=False)
+    points = Column('points', FLOAT, nullable=False)
+    passing_yards = Column('passing_yards', FLOAT, nullable=False)
+    passing_tds = Column('passing_tds', FLOAT, nullable=False)
+    interceptions = Column('interceptions', FLOAT, nullable=False)
+    sacks = Column('sacks', FLOAT, nullable=False)
+    rushing_yards = Column('rushing_yards', FLOAT, nullable=False)
+    rushing_tds = Column('rushing_tds', FLOAT, nullable=False)
+    receptions = Column('receptions', FLOAT, nullable=False)
+    recieving_yards = Column('recieving_yards', FLOAT, nullable=False)
+    recieving_tds = Column('recieving_tds', FLOAT, nullable=False)
+    fumbles = Column('fumbles', FLOAT, nullable=False)
 
 class User(Base):
     __tablename__ = "users"
@@ -41,9 +41,12 @@ class Comparison(Base):
 
     #Columns
     id = Column("id", INTEGER, primary_key=True)
+    player1_id = Column("player1_id", INTEGER)
+    player2_id = Column("player2_id", INTEGER)
     username = Column("username", TEXT, ForeignKey("users.username"))
 
     user = relationship("User", back_populates= "comparisons")
+    
 
 
     

@@ -10,7 +10,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
-    <a class="navbar-brand" href="comparison.html">Fantasy Football Comparison</a>
+    <a class="navbar-brand" href="{{url_for('search')}}">Fantasy Football Comparison</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -18,94 +18,75 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="comparison.html">Compare <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{url_for('search')}}">Compare <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="history.html">History</a>
+          <a class="nav-link" href="{{url_for('history')}}">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <div class="input-group rounded">
-          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-            aria-describedby="search-addon">
-        </div>
-      </form>
     </div>
   </nav>
   <div class="container text-center">
-      <h2>Player One</h2>
-      <h4>Position - Team</h4>
+      <h2>{{ p1_dict["name"] }} vs {{ p2_dict["name"] }}</h2>
       <table class="table">
         <tbody>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["points"] }}</td>
             <td>Points</td>
-            <td>0</td>
+            <td>{{ p2_dict["points"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["passing_yards"] }}</td>
             <td>Passing Yards</td>
-            <td>0</td>
+            <td>{{ p2_dict["passing_yards"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["passing_tds"] }}</td>
             <td>Passing TDs</td>
-            <td>0</td>
+            <td>{{ p2_dict["passing_yards"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["interceptions"] }}</td>
             <td>Interceptions</td>
-            <td>0</td>
+            <td>{{ p2_dict["interceptions"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["sacks"] }}</td>
             <td>Sacks</td>
-            <td>0</td>
+            <td>{{ p2_dict["sacks"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>Passing 2-pt Conversions</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>0</td>
+            <td>{{ p1_dict["rushing_yards"] }}</td>
             <td>Rushing Yards</td>
-            <td>0</td>
+            <td>{{ p2_dict["rushing_yards"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["rushing_tds"] }}</td>
             <td>Rushing TDs</td>
-            <td>0</td>
+            <td>{{ p2_dict["rushing_tds"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>Rushing 2-pt Conversions</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>0</td>
+            <td>{{ p1_dict["receptions"] }}</td>
             <td>Receptions</td>
-            <td>0</td>
+            <td>{{ p2_dict["receptions"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["recieving_yards"] }}</td>
             <td>Receiving Yards</td>
-            <td>0</td>
+            <td>{{ p2_dict["recieving_yards"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
+            <td>{{ p1_dict["recieving_tds"] }}</td>
             <td>Receiving TDs</td>
-            <td>0</td>
+            <td>{{ p2_dict["recieving_tds"] }}</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>Receiving 2-pt Conversions</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>0</td>
+            <td>{{ p1_dict["fumbles"] }}</td>
             <td>Fumbles</td>
-            <td>0</td>
+            <td>{{ p2_dict["fumbles"] }}</td>
           </tr>
         </tbody>
     <!-- Your Content ABOVE this Line -->
